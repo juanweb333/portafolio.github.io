@@ -1,0 +1,442 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*Variables*/
+:root {
+    --color-primario: rgb(255, 252, 242);
+    --color-secundario: rgb(204, 197, 185);
+    --color-terciario: rgb(64, 61, 57);
+    --color-cuaternario: rgb(37, 36, 34);
+    --color-quinto: rgb(235, 94, 40);
+    --fuente-primaria: 'Gloria Hallelujah', cursive;
+    --fuente-secundaria:'Roboto', sans-serif;
+}
+
+
+
+*{
+ margin: 0;
+ padding: 0;
+ text-decoration: none;
+ box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.container{
+    display: flex;
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container h1 {
+    font-size: 27px;
+    color: var(--color-quinto);
+}
+
+nav {
+    background-color: var(--color-primario);
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+ .menu_items {
+  display: flex;
+  list-style: none;
+  font-size: 17px;
+}
+
+.menu_items li a {
+    margin-right: 60px;
+    color: black;
+    font-size: 20px;
+}
+
+
+.menu_items li a:hover {
+  background-color: var(--color-quinto);
+  color: white;
+  padding: 10px;
+  border-radius: 6%;
+}
+
+
+
+                 /*Aqui empieza el contenido del sitio /contenedores*/
+
+
+img {
+    width: 400px;
+    padding-left: 40px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-family: var(--fuente-primaria);
+    color:  var(--color-primario);
+    font-size: 23px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px
+}
+
+p {
+    font-family: var(--fuente-secundaria);
+    color: var(--color-primario);
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.historial {
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 90px;
+    padding-top: 120px;
+    align-items: center;
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 22px));
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 19px;
+}
+
+.botones a {
+    color: white;
+}
+
+
+.item1{
+    margin-right: 30px;
+    background-color: var(--color-quinto);
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.item2{
+    background-color: var(--color-quinto);
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.trabajos {
+    background-color: var(--color-terciario);
+    padding-top: 80px;
+    clip-path: polygon(0 0,100% 22px,100% 100%,0 100%);
+    margin-top: -22px;
+    padding-bottom: 80px;
+}
+
+.trabajos h1 {
+ margin-bottom: 10px;
+}
+
+.trabajos p {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 70px;
+}
+
+.Programas{
+    padding-top: 99px;
+    background-color: var(--color-cuaternario);
+    padding-bottom: 80px;
+}
+
+.Programas h2{
+    margin-bottom: 30px;
+}
+
+
+.INFO {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.vectores {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: var(--fuente-primaria);
+    color: var(--color-primario);
+}
+
+
+
+
+h3 {
+    font-family: var(--fuente-primaria);
+    color: var(--color-quinto);
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--color-quinto);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: auto;
+}
+
+
+.Datos {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.item6{
+    font-family: var(--fuente-primaria);
+    color: var(--color-primario);
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.item7 {
+    font-family: var(--fuente-primaria);
+    color: var(--color-primario);
+    font-size: 15px;
+    text-align: center;
+}
+
+.item8{
+    text-decoration: none;
+    font-family: var(--fuente-primaria);
+    color: var(--color-primario);
+    font-size: 15px;
+    text-align: center;
+}
+
+
+                                /*Aquí empieza el slider*/
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 50%;
+  height: 50%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+                              /*Aquí finaliza el slider*/
+
+
+
+                                 /*MEDIA QUERY*/
+/*MEDIA QUERY se refiere a la adaptaciòn del sitio a las distintas resoluciones*/
+
+ /* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+ @media (min-width: 768px) and (max-width: 1024px)  {
+   
+    p {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+
+    .historial {
+        width: 137%;
+    }
+
+    .trabajos {
+        width: 137%;
+    }
+
+    .Programas {
+         width: 137%;
+    }
+
+    footer {
+        width: 137%;
+    }
+
+    .vectores img {
+        width: 80%;
+    }
+    
+    .logo {
+        padding-right: 0;
+    }
+
+    .navegador__header {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+     /*Aquí van las propiedades y valores según el dispositivo*/
+ 
+ }
+ 
+ /* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+ @media (min-width: 481px) and (max-width: 767px) {
+     
+
+    .navegador__header {
+        width: 157%;      
+        padding-bottom: 20px;
+      }
+     
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding-right: 459px;
+    }
+
+
+    .historial {
+        width: 157%
+    }
+
+    
+  .trabajos {
+    width: 157%;
+}
+ 
+  .Programas{
+      width: 157%;
+  }
+
+
+.vectores img{
+    width: 100px;
+}
+
+
+ footer {
+     width: 157%;
+ }
+
+
+ 
+ 
+    /*Aquí van las propiedades y valores según el dispositivo*/
+ 
+ }
+ 
+ /* ##Dispositivo = Smartphones de 320px a 479px */
+ @media (min-width: 320px) and (max-width: 480px) {
+  
+   p {
+       font-size: 10px;
+   }
+
+    
+  .navegador__header {
+    width: 87%;
+  }
+
+  .menu_items li a {
+    font-size: 2px;
+}
+
+  .container{
+      display: flex;
+      flex-direction: column;      
+  }
+
+  .container li a{
+      font-size: 8px;
+      margin-right: 20px;
+  }
+
+ .historial {
+     padding-top: 90px;
+     width: 99%;
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+  .botones{
+      font-size: 10px;
+  }
+
+  .trabajos {
+      width: 99%;
+  }
+
+  .vectores img{
+      width: 80px;
+  }
+
+  .item6{
+  font-size: 10px;
+}
+
+
+.item7 {
+ font-size: 10px;
+}
+
+.item8{
+  font-size: 10px;
+}
+    /*Aquí van las propiedades y valores según el dispositivo*/
+ 
+ }
+ 
+
+
